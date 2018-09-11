@@ -1,0 +1,86 @@
+Home
+<script>
+    $(document).ready(function() {
+	    $('.navbar').data('size', 'big');
+	});
+	$(window).scroll(function() {
+	    if ($(document).scrollTop() > 20) {
+		    if ($('.navbar').data('size') == 'big') {
+			    $('.navbar').data('size', 'small');
+				$('.navbar').stop().animate({
+					paddingTop : '0px'
+				}, 400);
+				$('.navbar').css("background-color", "rgba(255,255,255, 0.9)");
+                $('.navbar').css("box-shadow", "0px 2px 2px 0px #000;")
+			}
+		} else {
+			if ($('.navbar').data('size') == 'small') {
+				$('.navbar').data('size', 'big');
+				$('.navbar').stop().animate({
+					paddingTop : '10px'
+				}, 400);
+				$('.navbar').css("background-color", "rgba(255,255,255, 0.4)");
+                $('.navbar').css("box-shadow", "none")
+			}
+		}
+	});
+</script>
+
+Others
+<script>
+    $(document).ready(function() {
+	    $('.navbar').data('size', 'big');
+	});
+	$(window).scroll(function() {
+	    if ($(document).scrollTop() > 200) {
+		    if ($('.navbar').data('size') == 'big') {
+			    $('.navbar').data('size', 'small');
+				$('.navbar').stop().animate({
+					paddingTop : '0px'
+				}, 150);
+				$('.navbar').css("background-color", "lightgrey");
+				$('.navbar').css("box-shadow", "rgba(0, 0, 0, 0.156863) 0px 2px 4px 0px, rgba(0, 0, 0, 0.117647) 0px 2px 10px 0px;")
+			}
+		} else {
+			if ($('.navbar').data('size') == 'small') {
+				$('.navbar').data('size', 'big');
+				$('.navbar').stop().animate({
+					paddingTop : '10px'
+				}, 100);
+				$('.navbar').css("background-color", "transparent");
+				$('.navbar').css("box-shadow", "none")
+			}
+		}
+	});
+</script>
+
+
+
+<script>
+    $(document).ready(function() {
+	    $('.navbar').data('size', 'big');
+	});
+	$(window).scroll(function() {
+	    if ($(document).scrollTop() > 130) {
+		    if ($('.navbar').data('size') == 'big') {
+			    $('.navbar').data('size', 'small');
+				$('.navbar').stop().animate({
+					paddingTop : '0px'
+				}, 600);
+				$('.navbar').css("background-color", "white");
+				$('.navbar').css("box-shadow", "rgba(0, 0, 0, 0.156863) 0px 2px 4px 0px, rgba(0, 0, 0, 0.117647) 0px 2px 10px 0px;")
+			}
+		} else {
+			if ($('.navbar').data('size') == 'small') {
+				$('.navbar').data('size', 'big');
+				$('.navbar').stop().animate({
+					paddingTop : '20px'
+				}, 100);
+				$('.navbar').css("background-color", "transparent");
+				$('.navbar').css("box-shadow", "none")
+			}
+		}
+	});
+</script>
+
+
